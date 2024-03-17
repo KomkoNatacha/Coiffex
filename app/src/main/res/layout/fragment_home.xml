@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".client.Home"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="170dp"
+            android:background="@drawable/top_home">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catalogue"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:id="@+id/recherche"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:drawableEnd="@drawable/search_image"
+                    android:text="Searching for....."
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+
+                   />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item"
+            />
+
+</LinearLayout>

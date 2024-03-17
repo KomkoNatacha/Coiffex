@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380966477062",
+    "project_id": "coffex-384923",
+    "storage_bucket": "coffex-384923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380966477062:android:d48300fa787118fcc25287",
+        "android_client_info": {
+          "package_name": "ca.dmi.uqtr.coiffex3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380966477062-953f17n75flrqaoc9q31mpjkhs41n8c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDY74Rnm_c5Pk__CmhckVZJIiVNTLPNq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380966477062-953f17n75flrqaoc9q31mpjkhs41n8c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

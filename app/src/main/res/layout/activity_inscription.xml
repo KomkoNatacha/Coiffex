@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_inscription"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:context=".Inscription">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:text="Create account"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/lin_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1">
+
+
+        <!-- champ pour nom -->
+        <EditText
+            android:id="@+id/edit_nom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_blanc"
+            android:hint="Last name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+        <!-- champ pour Prenom -->
+        <EditText
+            android:id="@+id/edit_prenom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_orange"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+
+        <!-- champ pour l'adresse -->
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_blanc"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+        <!-- champ pour le numero  -->
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_orange"
+            android:hint="XXX-XXX-XXXX"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+        <!-- champ pour le mot de passe -->
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_blanc"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:padding="9dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_confirmation_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_orange"
+            android:hint="Confirmation password"
+            android:inputType="textPersonName"
+            android:padding="9dp"
+            android:textColor="#82D4E5"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/Radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="66dp"
+                android:text="Client" />
+
+            <RadioButton
+                android:id="@+id/radio_coiffeur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="66dp"
+                android:text="Coiffeur" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_singup"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_top_accueil"
+
+
+        android:text="SINGUP"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/lin_layout" />
+
+    <TextView
+        android:id="@+id/text_account"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account ?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button_singup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

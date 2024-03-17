@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".client.ReservationClient"
+    android:background="@drawable/background_top_accueil"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Réservation de coiffure"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/coiffeur_tx"
+            android:layout_marginTop="10dp"
+            android:text="Choisissez un coiffeur *"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+        <EditText
+            android:id="@+id/coiffeur_ed"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint=" Georges"
+            android:background="@drawable/background_button_blanc"
+            android:layout_marginTop="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/date_tx"
+            android:layout_marginTop="30dp"
+            android:text="Choisissez une date *"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/date_ed"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="01/01/2023"
+            android:background="@drawable/background_button_blanc"
+            android:layout_marginTop="8dp"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/heure_tx"
+            android:layout_marginTop="30dp"
+            android:text="Choisissez une heure *"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/heure_ed"
+            android:layout_width="fill_parent"
+            android:paddingTop="5dp"
+            android:background="@drawable/background_button_blanc"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="00:00"
+            android:textSize="22sp"
+            android:padding="8dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_suivant"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="70dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:text="Confirmer"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

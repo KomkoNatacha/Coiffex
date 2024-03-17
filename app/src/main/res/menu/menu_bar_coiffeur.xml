@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profil_coif"
+        android:icon="@drawable/baseline_person"
+        android:title="Profile"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mes_reservations_coif"
+        android:icon="@drawable/baseline_content_paste_24"
+        android:title="Mes reservations"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/messages_coif"
+        android:icon="@drawable/baseline_message"
+        android:title="Messages"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/maps_coif"
+        android:icon="@drawable/baseline_location_on_24"
+        android:title="Maps"
+        app:showAsAction="always"/>
+
+
+
+</menu>

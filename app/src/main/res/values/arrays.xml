@@ -1,0 +1,41 @@
+<resources>
+
+    <string-array name="hair_length_entries">
+        <item>Court</item>
+        <item>Moyen</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="hair_length_values">
+        <item>short</item>
+        <item>medium</item>
+        <item>long</item>
+    </string-array>
+
+    <string-array name="hair_type_entries">
+        <item>Lisse</item>
+        <item>Bouclé</item>
+        <item>Frisé</item>
+    </string-array>
+    <string-array name="hair_type_values">
+        <item>straight</item>
+        <item>curly</item>
+        <item>frizzy</item>
+    </string-array>
+
+    <string-array name="hair_color_entries">
+        <item>Blond</item>
+        <item>Brun</item>
+        <item>Noir</item>
+        <item>Rouge</item>
+    </string-array>
+    <string-array name="hair_color_values">
+        <item>blonde</item>
+        <item>brown</item>
+        <item>black</item>
+        <item>red</item>
+    </string-array>
+
+
+
+
+</resources>

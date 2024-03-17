@@ -1,0 +1,98 @@
+<!-- Définition de la hiérarchie de préférences -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Langue -->
+    <ListPreference
+        android:key="language"
+        android:title="Langue"
+        android:entries="@array/language_entries"
+        android:entryValues="@array/language_values"
+        android:defaultValue="fr" />
+
+
+    <!-- Thème -->
+    <ListPreference
+        android:key="theme"
+        android:title="Thème"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="light" />
+
+
+    <!-- Notifications -->
+    <SwitchPreference
+        android:key="notifications"
+        android:title="Notifications"
+        android:summaryOn="Activées"
+        android:summaryOff="Désactivées"
+        android:defaultValue="true" />
+
+
+
+
+    <!-- Préférences de style de coiffure -->
+    <PreferenceCategory android:title="Style de coiffure">
+
+        <!-- Longueur des cheveux -->
+        <ListPreference
+            android:key="hair_length"
+            android:title="Longueur des cheveux"
+            android:entries="@array/hair_length_entries"
+            android:entryValues="@array/hair_length_values"
+            android:defaultValue="medium" />
+
+        <!-- Type de cheveux -->
+        <ListPreference
+            android:key="hair_type"
+            android:title="Type de cheveux"
+            android:entries="@array/hair_type_entries"
+            android:entryValues="@array/hair_type_values"
+            android:defaultValue="straight" />
+
+        <!-- Couleur des cheveux -->
+        <ListPreference
+            android:key="hair_color"
+            android:title="Couleur des cheveux"
+            android:entries="@array/hair_color_entries"
+            android:entryValues="@array/hair_color_values"
+            android:defaultValue="blonde" />
+
+    </PreferenceCategory>
+
+
+
+
+
+
+    <!-- Historique de coiffure -->
+    <PreferenceCategory android:title="Historique de coiffure">
+
+        <!-- Liste des coiffures précédentes -->
+        <Preference
+            android:key="hair_history"
+            android:title="Historique de coiffure"
+            android:summary="Voir l'historique de toutes vos coiffures précédentes" />
+
+    </PreferenceCategory>
+
+
+
+    <!-- Calendrier -->
+    <PreferenceCategory android:title="Rendez-vous">
+
+        <!-- Prendre un rendez-vous -->
+        <Preference
+            android:key="make_appointment"
+            android:title="Prendre un rendez-vous"
+            android:summary="Prendre un rendez-vous avec votre coiffeur préféré" />
+
+
+
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

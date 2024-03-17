@@ -54,7 +54,5 @@ public class Home extends Fragment  {
         adapter.addItem(new Modele("Chignon","Cheveux torsadés et roulés sur la nuque ou au-dessus. ",  R.drawable.tresse8));
         adapter.addItem(new Modele("Perruques","C'est une coiffure de faux cheveux d'origine humaine, chevaline ou synthétique portée sur la tête pour des raisons liées à la mode, pour des considérations esthétiques ou professionnelles, ou pour se conformer à une prescription culturelle ",  R.drawable.tresse9));
         adapter.addItem(new Modele("Goddess Braids","Ce sont des tresses de boîte avec des brins bouclés ajoutés à la fin ou tout au long des tresses. Imaginez simplement de longues extensions de vagues de plage mélangées à des tresses de boîte régulières.",  R.drawable.tresse10));
-        adapter.addItem(new Modele("Knowfatim","les cheveux en l'air", R.drawable.tresse11));
-        adapter.addItem(new Modele("Locs"," Il s'agit de crochet Braid en fibres synthétiques de haute qualité fabriqué à la main. ",  R.drawable.tresse12));
     }
 }
